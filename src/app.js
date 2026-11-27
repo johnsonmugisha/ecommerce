@@ -10,7 +10,7 @@ app.use('/health', healthRoutes);
 app.use('/api/products', productRoutes);
 
 app.use((req, res) => {
-  res.status(404).json({ message: 'Route not found' });
+  res.status(404).json({ message: 'not found route' });
 });
 
 module.exports = app;
